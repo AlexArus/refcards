@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data base</title>
+    <link rel="stylesheet" href="../../style.css">
+    <script src="../../main.js" type="module"></script>
+    <style>
+        h3:first-child {
+            margin-top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <table>
+            <tr>
+                <td style="width: 50%;">
+                    <h3>ACID</h3>
+                    <dl>
+                        <dt>Atomicity</dt>
+                        <dd>guarantees that each transaction is treated as a single "unit", which either succeeds
+                            completely, or
+                            fails completely: if any of the statements constituting a transaction fails to complete, the
+                            entire
+                            transaction fails and the database is left unchanged</dd>
+                    </dl>
+                    <dl>
+                        <dt>Consistency</dt>
+                        <dd>ensures that a transaction can only bring the database from one valid state to another,
+                            maintaining
+                            database invariants: any data written to the database must be valid according to all defined
+                            rules,
+                            including constraints, cascades, triggers, and any combination thereof</dd>
+                    </dl>
+                    <dl>
+                        <dt>Isolation</dt>
+                        <dd>ensures that concurrent execution of transactions leaves the database in the same state that
+                            would have
+                            been obtained if the transactions were executed sequentially</dd>
+                    </dl>
+                    <dl>
+                        <dt>Durability</dt>
+                        <dd>guarantees that once a transaction has been committed, it will remain committed even in the
+                            case of a
+                            system failure</dd>
+                    </dl>
+
+
+                    <h3>Isolation levels</h3>
+                    read uncommitted - dirty read
+                    read committed - non repeatable read
+                    repeatable read - phantom read
+                    serializable
+
+
+                    <h3>CAP theorem</h3>
+                    It is imposible for distributed data store to simultaneously provide more than two of the:
+                    Consistency,
+                    Availability, Partition tolerance
+                    <dl>
+                        <dt>Consistency</dt>
+                        <dd>all clients see the same data at the same time</dd>
+                    </dl>
+                    <dl>
+                        <dt>Availability</dt>
+                        <dd>the system continues to operate even in the presence of node failures</dd>
+                    </dl>
+                    <dl>
+                        <dt>Partition tolerance</dt>
+                        <dd>the system continues to operate inspite of network failure</dd>
+                    </dl>
+
+                </td>
+                <td style="padding-left: 5px;">
+
+                    <h3>Normal forms</h3>
+                    <dl>
+                        <dt>1NF</dt>
+                        <dd>First normal form To satisfy 1NF, the values in each column of a table must be atomic.</dd>
+                    </dl>
+                    <dl>
+                        <dt>2NF</dt>
+                        <dd>Second normal form To conform to 2NF and remove duplicities, every non-key attribute must
+                            depend
+                            on the whole key, not just part of it.</dd>
+                    </dl>
+                    <dl>
+                        <dt>3NF</dt>
+                        <dd>Third normal form A table in third normal form (3NF) is a table in 2NF that has no
+                            transitive
+                            dependencies. No non-prime (non-key) attribute is transitively dependent on any key i.e. no
+                            non-prime
+                            attribute depends on other non-prime attributes. All the non-prime attributes must depend
+                            only on the
+                            keys.</dd>
+                    </dl>
+                    <dl>
+                        <dt>BCNF</dt>
+                        <dd>Boyce-Codd normal form A relational schema R is considered to be in BoyceCodd normal form
+                            (BCNF) if, for
+                            every one of its dependencies X → Y, one of the following conditions hold true:
+                            X → Y is a trivial functional dependency (i.e., Y is a subset of X) X is a superkey for
+                            schema R</dd>
+                    </dl>
+                    <dl>
+                        <dt>4NF</dt>
+                        <dd>Fourth normal form Whereas the second, third, and BoyceCodd normal forms are concerned with
+                            functional dependencies, 4NF is concerned with a more general type of dependency known as a
+                            multivalued
+                            dependency. A table is in 4NF if and only if, for every one of its non-trivial multivalued
+                            dependencies
+                            X ↠ Y, X is a superkey—that is, X is either a candidate key or a superset thereof.</dd>
+                    </dl>
+                    <dl>
+                        <dt>5NF</dt>
+                        <dd>Fifth normal form Fifth normal form (5NF), also known as project-join normal form (PJ/NF),
+                            is a level
+                            of database normalization designed to reduce redundancy in relational databases recording
+                            multi-valued
+                            facts by isolating semantically related multiple relationships. A table is said to be in the
+                            5NF if and
+                            only if every non-trivial join dependency in that table is implied by the candidate keys. A
+                            join
+                            dependency *{A,
+                            B, …, Z} on R is implied by the candidate key(s) of R if and only if each of A, B, …, Z is a
+                            superkey for
+                            R.
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>6NF</dt>
+                        <dd>Sixth normal form A simple and intuitive definition of the sixth normal form is that "a
+                            table is in 6NF
+                            when the row contains the Primary Key, and at most one other attribute".</dd>
+                    </dl>
+                </td>
+            </tr>
+        </table>
+
+    </main>
+</body>
+
+</html>

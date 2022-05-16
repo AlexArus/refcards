@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="../../style.css">
+    <script src="../../main.js" type="module"></script>
+    <style>
+        h3:first-child {
+            margin-top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+
+        <table>
+            <tr>
+                <td style="width: 50%;">
+                    <h3>CSS selectors</h3>
+                    <h4>Basic selectors</h4>
+                    <dl>
+                        <dt>Universal selector</dt>
+                        <dd>Selects all elements. Optionally, it may be restricted to a specific namespace or to all
+                            namespaces.
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>Type selector</dt>
+                        <dd>Selects all elements that have the given node name.</dd>
+                    </dl>
+                    <dl>
+                        <dt>Class selector</dt>
+                        <dd>Selects all elements that have the given class attribute.</dd>
+                    </dl>
+                    <dl>
+                        <dt>ID selector</dt>
+                        <dd>Selects an element based on the value of its id attribute. There should be only one element
+                            with a given
+                            ID in a document.</dd>
+                    </dl>
+                    <dl>
+                        <dt>Attribute selector</dt>
+                        <dd>Selects all elements that have the given attribute.</dd>
+                    </dl>
+
+                    <h4>Grouping selectors</h4>
+                    <dl>
+                        <dt>Selector list</dt>
+                        <dd>The , is a grouping method, it selects all the matching nodes.</dd>
+                    </dl>
+
+                    <h4>Combinators</h4>
+                    <dl>
+                        <dt>Descendant combinator</dt>
+                        <dd>The (space) combinator selects nodes that are descendants of the first element.</dd>
+                    </dl>
+                    <dl>
+                        <dt>Child combinator</dt>
+                        <dd>The > combinator selects nodes that are direct children of the first element.</dd>
+                    </dl>
+                    <dl>
+                        <dt>General sibling combinator</dt>
+                        <dd>The ~ combinator selects siblings. This means that the second element follows the first
+                            (though not
+                            necessarily immediately), and both share the same parent.</dd>
+                    </dl>
+                    <dl>
+                        <dt>Adjacent sibling combinator</dt>
+                        <dd>The + combinator matches the second element only if it immediately follows the first
+                            element.</dd>
+                    </dl>
+                    <dl>
+                        <dt>Column combinator</dt>
+                        <dd>The || combinator selects nodes which belong to a column.</dd>
+                    </dl>
+
+                </td>
+                <td style="padding-left: 5px;">
+                    <h3>CSS Specificity</h3>
+                    <ul>
+                        <li>If the element has important style, apply 1,0,0,0,0 points</li>
+                        <li>If the element has inline styling, apply 1,0,0,0 points</li>
+                        <li>For each ID value, apply 0,1,0,0 points</li>
+                        <li>For each class value (or pseudo-class or attribute selector), apply 0,0,1,0 points</li>
+                        <li>For each element reference, apply 0,0,0,1 point</li>
+                        <li>The universal selector and inherited selectors have a specificity of 0, 0, 0, 0</li>
+                    </ul>
+
+                    <h3>Pseudo classes</h3>
+                    The : pseudo allow the selection of elements based on state information that is not contained in the
+                    document
+                    tree.
+                    <h3>Pseudo elements</h3>
+                    The :: pseudo represent entities that are not included in HTML.
+                </td>
+            </tr>
+        </table>
+    </main>
+</body>
+
+</html>

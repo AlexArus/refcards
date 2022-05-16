@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOLID and GRASP</title>
+    <link rel="stylesheet" href="../../style.css">
+    <script src="../../main.js" type="module"></script>
+    <style>
+        h3:first-child {
+            margin-top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <table>
+            <tr>
+                <td style="width: 50%;">
+                    <h3>GRASP</h3>
+                    <p>General Responsibility Assignment Software Patterns</p>
+                    <dl>
+                        <dt>Information expert</dt>
+                        <dd>assign the responsibility to the class which has the information necessary to fulfill that
+                            responsibility</dd>
+                    </dl>
+                    <dl>
+                        <dt>Creator</dt>
+                        <dd>is responsible for creating objects contain or compositely aggregate instances record or
+                            closely use
+                            instances have initializing information for instances</dd>
+                    </dl>
+                    <dl>
+                        <dt>Controller</dt>
+                        <dd>is responsible for receiving or handling a system event</dd>
+                    </dl>
+                    <dl>
+                        <dt>Indirection</dt>
+                        <dd>assign the responsibility of mediation between two elements to an intermediate object</dd>
+                    </dl>
+                    <dl>
+                        <dt>Low coupling</dt>
+                        <dd>assign responsibilities to support lower dependency between classes, change in one class
+                            having lower
+                            impact on other classes, higher reuse potential</dd>
+                    </dl>
+                    <dl>
+                        <dt>High cohesion</dt>
+                        <dd>responsibiliby are strongly related and highly focused</dd>
+                    </dl>
+                    <dl>
+                        <dt>Polymorphism</dt>
+                        <dd>assign a responsibility according to the type of variation of behaviors by polymorphic
+                            operations</dd>
+                    </dl>
+                    <dl>
+                        <dt>Protected variations</dt>
+                        <dd>protects elements from variations on other by wrapping into interface and using polymorphism
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>Pure fabrication</dt>
+                        <dd>specially made class to archieve low coupling, high cohesion and reuse potential</dd>
+                    </dl>
+                </td>
+
+                <td style="padding-left: 5px;">
+                    <h3>SOLID</h3>
+
+                    <dl>
+                        <dt>The Single-responsibility principle</dt>
+                        <dd>a class should have only a single responsibility, a class should have one, and only one,
+                            reason to
+                            change</dd>
+                    </dl>
+                    <dl>
+                        <dt>The Open-closed principle</dt>
+                        <dd>software entities should be open for extension, but closed for modification</dd>
+                    </dl>
+                    <dl>
+                        <dt>The Liskov substitution principle</dt>
+                        <dd>functions that use pointers or references to base classes must be able to use objects of
+                            derived classes
+                            without knowing it</dd>
+                    </dl>
+                    <dl>
+                        <dt>The Interface segregation principle</dt>
+                        <dd>many client-specific interfaces are better than one general-purpose interface</dd>
+                    </dl>
+                    <dl>
+                        <dt>The Dependency inversion principle</dt>
+                        <dd>depend upon abstractions, not concretions</dd>
+                    </dl>
+
+                    <h3>Other</h3>
+                    <dl>
+                        <dt>KISS</dt>
+                        <dd>Keep it short and simple</dd>
+                    </dl>
+                    <dl>
+                        <dt>YAGNI</dt>
+                        <dd>You aren't gonna need it</dd>
+                    </dl>
+                    <dl>
+                        <dt>DRY</dt>
+                        <dd>Don't repeat yourself</dd>
+                    </dl>
+                    <dl>
+                        <dt>Occam's razor</dt>
+                        <dd>This philosophical razor advocates that when presented with competing hypotheses about the
+                            same
+                            prediction, one should select the solution with the fewest assumptions, and that this is not
+                            meant to be
+                            a way of choosing between hypotheses that make different predictions.</dd>
+                    </dl>
+                    <dl>
+                        <dt>Hollywood principle</dt>
+                        <dd>Don't call us, we'll call you</dd>
+                    </dl>
+                </td>
+            </tr>
+
+        </table>
+    </main>
+</body>
+
+</html>
