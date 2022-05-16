@@ -1,0 +1,69 @@
+
+/* Roboto Mono https://fonts.google.com/specimen/Roboto+Mono?category=Monospace&icon.style=Outlined#standard-styles */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono");
+/* Material Symbols https://fonts.google.com/icons 
+*  guide https://developers.google.com/fonts/docs/material_icons
+*/
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+* {
+    box-sizing: border-box;
+}
+
+@page {
+    size: A4 landscape;
+    margin: 0;
+    padding: 0;
+}
+
+@media print {
+    body {
+        border: 0px;
+    }
+}
+
+:root {
+    --base-font-size: 11px;
+    font-family: 'Roboto Mono';
+    font-size: var(--base-font-size);
+    text-align: justify;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: grid;
+    place-items: center;
+}
+
+main {
+    /* A4 210 x 297 mm */
+    height: 210mm;
+    width: 297mm;
+
+    min-height: 210mm;
+    min-width: 297mm;
+    max-height: 210mm;
+    max-width: 297mm;
+
+    margin: 0;
+    padding: 1cm;
+
+    overflow: hidden;
+
+    border: 1px solid black;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    margin-inline-start: 10px;
+}
